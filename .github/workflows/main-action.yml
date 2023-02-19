@@ -1,4 +1,4 @@
-name: Main action
+name: Formatting and tests
 
 on: [push]
 
