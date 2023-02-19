@@ -1,4 +1,4 @@
-name: Formatting and tests
+name: Formatting
 
 on: [push]
 
