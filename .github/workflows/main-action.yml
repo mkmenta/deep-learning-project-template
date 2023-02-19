@@ -1,0 +1,20 @@
+name: Main action
+
+on: [push]
+
+jobs:
+  Check-Format-and-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install requirements
+        run: |
+          # python3 -m pip install -r requirements.txt
+          python3 -m pip install -r test-requirements.txt
+      - name: Check code format
+        run: |
+          python3 -m pycodestyle project --max-line-length=120
