@@ -2,7 +2,7 @@ import pytorch_lightning as pl
 import torch
 from torch.nn import functional as F
 
-from metrics.accuracy import Accuracy
+from project.metrics.accuracy import Accuracy
 from sklearn.metrics import confusion_matrix
 
 
